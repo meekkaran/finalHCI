@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mic.css">
+</head>
+<body>
+  <div class="center">
+    <p>
+      <div id="div_language">
+        <select id="select_language" onchange="updateCountry()"></select> &nbsp;&nbsp;
+        <select id="select_dialect"></select>
+      </div>
+  </div>
+    <div id="info">
+        <p id="info_start">Click on the mic to speak.</p>
+        <p id="info_speak_now">Speak now.</p>
+        <p id="info_no_speech">No speech was detected. You may need to adjust your microphone settings</p>
+        <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
+      </div>
+      <div class="right">
+        <button id="start_button" onclick="startButton(event)">
+          <img id="start_img" src="https://www.google.com/intl/en/chrome/assets/common/images/content/mic.gif" alt="Start"></button>
+      </div>
+      <div id="results">
+        <p id="final_span" class="final"></p>
+        <p id="interim_span" class="interim"></p>
+        <p>
+      </div>
+
+      <div id="hci">
+        <header>
+
+
+
+                <div class="logo">
+                    <img src="cuff.png">
+                    <ul>
+                        <button type="button" onclick="document.getElementById('hci').style.fontSize='30px'">LARGE FONT</button>
+                        <button type="button" onclick="document.getElementById('hci').style.fontSize='13px'">SMALL FONT</button>
+                        <button type="button" onclick="document.getElementById('hci').style.fontFamily='Arial'">FONT FAMILY</button>
+                        <li><a href="#">Report Crimes</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="menubar">
+                    <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <ul>
+                            <button class="black" type="button" onclick="document.getElementById('hci').style.color='black'">BLACK</button>
+                            <button class="blue" type="button" onclick="document.getElementById('hci').style.color='blue'">BLUE</button>
+                            <button  class="green" type="button" onclick="document.getElementById('hci').style.color='green'">GREEN</button>
+                            <button class="gray" type="button" onclick="document.getElementById('hci').style.color='gray'">GRAY</button>
+                            <li class><a class="active" href="mic.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="login.html">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <script src="mic.js"></script>
+        </header>
+
+        <style>
+            
+            /* Style inputs */
+            
+            input[type=texts],
+        #location,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+             h1{
+        position: absolute;
+        left:30%;
+        top:5%;
+        font-size: 30px;
+        color: white;
+        background-color: maroon;
+        border:2px maroon;
+        cursor:pointer;
+        }
+        
+            input[type=submit] {
+                background-color: burlywood;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+                background-color: brown;
+            }
+            /* Style the container/contact section */
+            
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+            /* Create two columns that float next to eachother */
+            
+            .column {
+                float: left;
+                width: 50%;
+                margin-top: 6px;
+                padding: 20px;
+            }
+            /* Clear floats after the columns */
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+        
+        
+        <div class="container">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p>Leave us a message:</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                </div>
+                <div class="column">
+                    <form class="contact" action="">
+                        <label for="fname">First Name</label>
+                        <input type="texts" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="texts" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Location</label>
+                        <select id="location" name="location">
+                            <option value="Drop down">Pick Location</option>
+                <option value="Khoja">Khoja</option>
+                <option value="Chaani">Chaani</option>
+                <option value="Makupa">Makupa</option>
+                <option value="Langata">Langata</option>
+                <option value="Ongata">Ongata</option>
+                <option value="Westlands">Westlands</option>
+                <option value="Mvita">Mvita</option>
+                <option value="Austa">Austa</option>
+                <option value="Docks">Docks</option>
+                <option value="Mto">Mtongwe</option>
+                        <option value="Balle">Ballerina</option>
+                        <option value="Bam">Bamburi</option>
+                        <option value="Mtw">Mtwapa</option>
+                        <option value="Ru">Runda</option>
+                        <option value="Kib">Kibokoni</option>
+                        <option value="Tewa">Tewa</option>
+                        <option value="Mewa">Mewa</option>
+                        <option value="Mar">Markiti</option>
+                        <option value="Doc">Docks</option>
+                        <option value="Chan">Changamwe</option>
+                        <option value="la">LA</option>
+                        <option value="Par">Pari</option>
+                        <option value="afri">Afrique</option>
+                        <option value="kan">Kanji</option>
+                        <option value="wwer">wwerdja</option>
+              </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script>
+            function addDarkmodeWidget() {
+              new Darkmode().showWidget();
+            }
+            window.addEventListener('load', addDarkmodeWidget);
+    
+    
+            const options = {
+      bottom: '64px', // default: '32px'
+      right: '32px', // default: '32px'
+      left: 'unset', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+      mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: true, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+    
+    }
+     
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+    
+          </script>
+    
+    </body>
+    
+    </html>
