@@ -86,10 +86,10 @@
     margin:0;
 }
 header{
-    height:200px;
+    height:;
 }
 img{
-    width:150px;
+    width:140px;
     height:auto;
 }
 .black{
@@ -110,7 +110,7 @@ img{
 }
 .logo{
     border-bottom: 1px solid black;
-    height:100px;
+    height:80px;
     position:
 }
 .logo ul{
@@ -120,7 +120,7 @@ img{
 }
 .logo ul li{
     display:inline-block;
-    line-height:80px;
+    line-height:50px;
     margin: 0 7px;
     font-size: 30px;
 }
@@ -129,21 +129,21 @@ img{
     list-style-type: none;
     background-color: maroon;
     text-decoration: none;
-    border-radius: 40px;
+    border-radius: 30px;
     padding:10px;
 }
 
 .menubar{
     float:right;
     border-bottom: 1px solid black;
-    position:
+    height:45px;
 }
 nav ul{
    margin-right: 50px;
 }
 nav ul li{
     display:inline-block;
-    line-height: 80px;
+    line-height: 40px;
     margin: 0 5px;
     font-family: sans-serif;
 }
